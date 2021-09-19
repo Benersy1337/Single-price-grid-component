@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(238, 229, 229);
+}
+
+
+
+.centro{
+   display: grid;
+   height: 50%;
+   width: 50%;
+   background: white;
+   text-align: left;
+   align-items: center;
+   padding: 3rem;
+   border-radius: 1rem;
+   margin: auto;
+   
+   grid-template-columns: 50% 50%;
+
+   grid-template-rows: 11.4rem 1fr;
+   
+   grid-template-areas: 
+   
+   'header header'
+
+   'leftside rightside'
+   
+   ;
+}
+
+header{
+    grid-area: header;
+}
+
+.bottomside{
+    display: flex;
+}
+
+.leftside{
+    grid-area: leftside;
+}
+
+.rightside{
+    grid-area: rightside;
+}
+
